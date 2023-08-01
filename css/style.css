@@ -1,0 +1,173 @@
+/*General*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-image: url(../img/Cesped2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* Estilo para la barra negra */
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 75px;
+}
+.logo img {
+    max-height: 50px;
+}
+/* Estilo para el carrito */
+.cart i {
+    font-size: 25px;
+    color: white;
+}
+.cart i:hover{
+    color: grey;
+}
+/*Product content*/
+.shop-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.card{
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 1.0);
+    width: 250px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.card > img {
+    max-width: 90%;
+    height: 250px;
+}
+.price{
+    color: gray;
+    font-size: 22px;
+}
+
+.card button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 250px;
+    font-size: 18px;
+}
+.card button:hover{
+    opacity: 0.7;
+}
+/* Modal content*/ 
+.modal-container {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*for the top*/
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar {
+    display: none;
+}
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.modal-header-tittle{
+    justify-self: start;
+}
+
+.modal-header-button {
+    cursor: pointer;
+}
+
+.modal-container > .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+.modal-container > div > img{
+    width: 120px;
+}
+.total-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+  
+.total-content {
+    font-size: 1.2rem;
+}
+  
+.empty-cart-button,
+.buy-button {
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #11a0d9;
+    color: #fff;
+    cursor: pointer;
+}
+  
+.empty-cart-button:hover,
+.buy-button:hover {
+    background-color: #0d82b4;
+}
+
+/* Borrar producto*/
+.delete-product{
+    cursor: pointer;
+}
+/* Contador carrito*/
+.cantidad-carrito{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 5px;
+    top: 35px;
+    right: 63px;
+    position: absolute;
+    display: none;
+}
+
+.restar{
+    cursor: pointer;
+}
+
+.sumar{
+    cursor: pointer;
+}
